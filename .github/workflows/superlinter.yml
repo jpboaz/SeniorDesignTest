@@ -10,11 +10,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         
-      - name: Run Super-Linter
-        uses: github/super-linter@v3.17.0
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     # - name: Run Super-Linter
+     #   uses: github/super-linter@v3.17.0
+     #   env:
+     #     DEFAULT_BRANCH: main
+     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Build and push Docker
         uses: mr-smithers-excellent/docker-build-push@v5
